@@ -1,0 +1,37 @@
+@use 'base';
+
+
+.title {
+color: base.$primary-color;
+}
+
+@mixin carre ($theme:red){
+    height: 100px;
+    width: 100px;
+    background-color: $theme;
+}
+
+%title_box {
+    
+}
+
+.carre_1{
+    @include carre;
+    @extend %border_black;
+}
+
+.carre_2{
+    @include carre(blue);
+}
+
+.carre_3{
+    @include carre(green);
+}
+
+.parent_1 {
+    @extend %vertical_align;
+}
+
+%txt_box {
+    font-size:large;
+}

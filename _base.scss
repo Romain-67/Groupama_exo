@@ -1,0 +1,14 @@
+//_base.scss
+
+$primary-color : green;
+
+%border_black{
+    border: 3px solid black;
+}
+
+%vertical_align {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
